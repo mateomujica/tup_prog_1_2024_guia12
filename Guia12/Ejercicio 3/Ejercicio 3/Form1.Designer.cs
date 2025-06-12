@@ -65,10 +65,12 @@
             // 
             // lbCantidad
             // 
-            lbCantidad.Location = new Point(158, 38);
+            lbCantidad.AutoSize = true;
+            lbCantidad.Location = new Point(157, 56);
             lbCantidad.Name = "lbCantidad";
-            lbCantidad.Size = new Size(68, 33);
+            lbCantidad.Size = new Size(0, 15);
             lbCantidad.TabIndex = 3;
+            lbCantidad.Click += lbCantidad_Click;
             // 
             // lsbListado
             // 

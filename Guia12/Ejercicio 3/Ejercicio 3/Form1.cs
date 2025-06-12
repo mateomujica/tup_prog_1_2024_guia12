@@ -12,23 +12,23 @@ namespace Ejercicio_3
             Form2 fDialogo = new Form2();
 
             //lsbListado.Items.Clear();   
-            //int n = 0;
-            //while (n < 10 && fDialogo.ShowDialog()==DialogResult.OK)
+            //int n = 1;
+            //while (n <= 10 && fDialogo.ShowDialog()==DialogResult.OK)
             //{
             //    lsbListado.Items.Add($"{fDialogo.tbValor.Text}");
-
+            //    lbCantidad.Text = "" + n;
             //    //reinicializar
             //    fDialogo.tbValor.Clear();
             //   n++;
             //}
 
             //lsbListado.Items.Clear();
-            //int n = 0;
+            //int n = 1;
             //fDialogo.ShowDialog();
-            //while (n < 10 && fDialogo.DialogResult == DialogResult.OK)
+            //while (n <= 10 && fDialogo.DialogResult == DialogResult.OK)
             //{
             //    lsbListado.Items.Add($"{fDialogo.tbValor.Text}");
-
+            //    lbCantidad.Text = "" + n;
             //    //reinicializar
             //    fDialogo.tbValor.Clear();
             //    fDialogo.ShowDialog();
@@ -37,14 +37,22 @@ namespace Ejercicio_3
 
             lsbListado.Items.Clear();
             fDialogo.ShowDialog();
-            for(int n=0; n < 10 && fDialogo.DialogResult == DialogResult.OK;n++)
+            for (int n = 1; n <= 10 && fDialogo.DialogResult == DialogResult.OK; n++)
             {
                 lsbListado.Items.Add($"{fDialogo.tbValor.Text}");
-
+                lbCantidad.Text = "" + n;
                 //reinicializar
                 fDialogo.tbValor.Clear();
                 fDialogo.ShowDialog();
+
             }
+
+           
+        }
+
+        private void lbCantidad_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
